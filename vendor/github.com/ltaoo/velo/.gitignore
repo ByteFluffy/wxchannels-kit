@@ -1,0 +1,44 @@
+# Build output
+dist/
+.build/
+*.syso
+/velo*
+!/velo.go
+_example/simple/build
+
+# Compiled binaries
+_example/demo-desktop/demo-desktop
+_example/demo-reader/reader
+_example/demo-im/demo-im
+_example/simple/_example/
+
+_example/**/*/data.json
+_example/**/*/storage.json
+_example/**/*/*.db
+
+# WebView2 runtime artifacts (extracted from embed on first run)
+_example/demo-reader/WebView2Loader.dll
+_example/demo-reader/reader.exe
+_example/demo-reader/reader.exe.WebView2/
+
+# Environment
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+MyApp.app
+vendor/
+
+# Frontend assets
+_example/frontendserver/frontend/public/timeless/
+
+workdir
+

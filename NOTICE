@@ -1,0 +1,19 @@
+wxchannels-kit
+
+The project-owned code is distributed under the root LICENSE, including its
+Commons Clause no-sale condition. Third-party components retain their separate
+licenses and required copyright notices in their own source and license files.
+The root Commons Clause does not relicense independent third-party components.
+
+The vendor directory intentionally includes dependency source and required
+embedded assets. Preserve accompanying license, copyright, and notice files
+when redistributing those components. Source marked with separate notices
+outside vendor remains subject to those notices as well.
+
+Local dependency modifications:
+- SunnyNet/src/public/constobj.go: shared RootCa and RootKey defaults emptied.
+- SunnyNet/src/Resource/builtCmdWords.js: bundled shared certificate/private-key
+  examples removed from help data.
+These changes prevent distributing shared CA signing material. They do not
+change the original component's license. Reapplying dependency vendoring must
+not reintroduce that material.
